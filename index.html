@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Barlow:wght@400;500;600;700;800;900&family=Fraunces:wght@100;200;300;400;500;600;800&family=Kumbh+Sans:wght@100;200;400;500;600;700;800&family=League+Spartan:wght@100;300;400;600;700;800;900&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="ageCalculator.js" defer></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <section id="main">
+    <!-- (date-birth [section]) where the user inputs their DOB -->
+    <div id="date-birth">
+      <div id="user-entry">
+        <div class="date">
+          <label id="day-label" class="date-label" for="day-input">DAY</label>
+          <input id="day-input" class="user-input" type="number" placeholder="DD" min="1" max="31">
+          <h3 id="day-error-message" class="error-message"></h3>
+        </div>
+        <div class="date">
+          <label id="month-label" class="date-label" for="month-input">MONTH</label>
+          <input id="month-input" class="user-input" type="number" placeholder="MM" max="12">
+          <h3 id="month-error-message" class="error-message"></h3>
+        </div>
+        <div class="date">
+          <label id="year-label" class="date-label" for="year-input">YEAR</label>
+          <input id="year-input" class="user-input" type="number" placeholder="YYYY">
+          <h3 id="year-error-message" class="error-message"></h3>
+        </div>
+      </div>
+
+      <img src="assets/images/icon-arrow.svg" id="icon-arrow" alt="">
+    </div>
+
+    <!-- (Age [section]) where the user see their age -->
+    <div id="user-age">
+      <div class="age">
+        <h1 class="age-number" id="age-number-years">- -</h1>
+        <h1 class="age-text">years</h1>
+      </div>
+      <div class="age">
+        <h1 class="age-number" id="age-number-months">- -</h1>
+        <h1 class="age-text">months</h1>
+      </div>
+      <div class="age">
+        <h1 class="age-number" id="age-number-days">- -</h1>
+        <h1 class="age-text">days</h1>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

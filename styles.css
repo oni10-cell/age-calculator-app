@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+}
+
+/* main section */
+#main{
+    background-color: hsl(0, 0%, 100%);
+    padding: 35px 67px 40px 35px;
+    border-radius: 20px 20px 150px;
+    margin-top: 70px;
+}
+
+/* date-birth section */
+#date-birth{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    border-bottom: 1.5px solid hsl(0, 0%, 86%);
+    padding-bottom: 35px;
+}
+#user-entry{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.date-label{
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    letter-spacing: 2px;
+    color: hsl(0, 1%, 44%);
+    display: block;
+}
+.user-input{
+    width: 117px;
+    height: 55px;
+    border: 1.2px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    padding: 0 0 0 17px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.user-input::placeholder{
+    color: hsl(0, 1%, 44%);
+    font-weight: 700;
+    font-size: 24px;
+}
+.user-input:hover{
+    border: 1.2px solid hsl(259, 100%, 65%);
+}
+#icon-arrow{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom: -84px;
+    right: -30px;
+}
+.error-message{
+    display: none;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 5px;
+    color: hsl(0, 100%, 67%);
+}
+#icon-arrow:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+/* Age section */
+#user-age{
+    margin-top: 30px;
+}
+.age{
+    display: flex;
+}
+.age *{
+    font-style: italic;
+    font-size: 76px;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+.age-number{
+    color: hsl(259, 100%, 65%);
+}
+.age-text{
+    margin-left: 5px;
+    color: hsl(0, 0%, 8%);
+}
+
+@media(max-width: 595px){
+    #main{
+        width: 90%;
+        padding: 40px 30px;
+        margin-top: 30px;
+    }
+    #date-birth{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #user-entry{
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .date{
+        width: 30%;
+    }
+    .user-input{
+        width: 100%;
+    }
+    .error-message{
+        width: 100%;
+        font-size: 10px;
+    }
+#icon-arrow{
+    position: relative;
+    margin: auto;
+    top: 30.5px;
+    right: 0;
+}
+/* Age section */
+#user-age{
+    margin-top: 60px;
+}
+.age *{
+    font-size: 70px;
+}
+}
+
+@media(max-width: 500px){
+    #main{
+        width: 90%;
+        padding: 40px 20px;
+        margin-top: 110px;
+    }
+    #user-entry{
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .user-input{
+        padding-left: 15px;
+    }
+    .user-input::placeholder{
+        font-size: 18px;
+    }
+    .error-message{
+        font-size: 8px;
+    }
+    .age *{
+        font-size: 50px;
+    }
+}
